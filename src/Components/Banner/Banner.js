@@ -9,7 +9,7 @@ const Banner = () => {
         backgroundAttachment: " fixed",
         backgroundPosition: "center",
         backgroundSize: "cover",
-        backgroundImage: ` linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1528127269322-539801943592?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80")`,
+        backgroundImage: ` linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.plannepal.com/uploads/2016/06/standard/185a5d89cde2bacf5b0ca1879f4ec2a7.jpg")`,
       }}
     >
       <div>

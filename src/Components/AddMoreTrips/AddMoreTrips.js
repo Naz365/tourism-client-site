@@ -6,7 +6,7 @@ const AddMoreTrips = () => {
   document.title = "Add More Trips";
   const onSubmit = (data) => {
     axios
-      .post("https://peaceful-castle-01942.herokuapp.com/addMoreTrips", data)
+      .post("https://evil-cemetery-21742.herokuapp.com/addMoreTrips", data)
       .then((res) => {
         if (res.data.insertedId) {
           alert("Trip Added");

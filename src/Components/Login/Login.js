@@ -1,4 +1,5 @@
 import React from "react";
+import { FcGoogle } from "react-icons/fc";
 import { useHistory, useLocation } from "react-router";
 import useAuth from "../../hooks/useAuth";
 import "./Login.css";
@@ -28,7 +29,7 @@ const Login = () => {
               className="btn btn btn-dark fs-4"
               onClick={handleUsingGoogle}
             >
-              <i className="fab fa-google"></i> Login with google
+              <FcGoogle /> Login with google
             </button>
           </div>
         </div>

@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-4">
-              <h1 className="text-warning">Fahim's Tourism Guide</h1>
+              <h1 className="text-primary">Legend Tour & Travels</h1>
             </div>
             <div className="col-md-4 my-2">
               <h4>ACTIVITIES</h4>
@@ -30,7 +30,7 @@ const Footer = () => {
           <hr />
           <div className="row">
             <p className="col-sm">
-              &copy;{new Date().getFullYear()} Fahim's Tourism Guide | © All
+              &copy;{new Date().getFullYear()} Legend Tour & Travels | © All
               rights reserved | Terms Of Service || Privacy 2021.
             </p>
           </div>

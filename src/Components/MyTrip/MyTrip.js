@@ -9,7 +9,7 @@ const MyTrip = () => {
   const email = user.email;
   useEffect(() => {
     axios
-      .get(`https://peaceful-castle-01942.herokuapp.com/myTrips/${email}`)
+      .get(`https://evil-cemetery-21742.herokuapp.com/myTrips/${email}`)
       .then((res) => setMyEvents(res.data));
   }, []);
 
@@ -17,7 +17,7 @@ const MyTrip = () => {
     const proceed = window.confirm("Are you sure, you want to delete ?");
     if (proceed) {
       axios
-        .delete(`https://peaceful-castle-01942.herokuapp.com/deleteTrip/${id}`)
+        .delete(`https://evil-cemetery-21742.herokuapp.com/deleteTrip/${id}`)
         .then((res) => {
           if (res.data.deletedCount > 0) {
             const remaining = myEvents.filter((tour) => tour._id !== id);

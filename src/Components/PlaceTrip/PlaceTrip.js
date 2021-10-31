@@ -14,7 +14,7 @@ const PlaceTrip = () => {
 
   useEffect(() => {
     axios
-      .get("https://peaceful-castle-01942.herokuapp.com/allTours")
+      .get("https://evil-cemetery-21742.herokuapp.com/allTours")
 
       .then((res) => setDetails(res.data));
   }, []);
@@ -27,7 +27,7 @@ const PlaceTrip = () => {
     data.img_url = newData?.img_url;
     data.status = "Pending";
     axios
-      .post("https://peaceful-castle-01942.herokuapp.com/userEventData", data)
+      .post("https://evil-cemetery-21742.herokuapp.com/userEventData", data)
       .then((res) => {
         if (res.data.acknowledged) {
           alert("Your trip has been booked successfully");

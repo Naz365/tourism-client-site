@@ -1,16 +1,16 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import About from "../About/About";
 import Banner from "../Banner/Banner";
+import Something from "../something/Something";
 import Subscribe from "../Subscribe/Subscribe";
 
 const Home = () => {
   const [allTours, setAllTours] = useState([]);
-  document.title = "Fahim's tourism guide";
+  document.title = "  Legend Tour & Travels";
   useEffect(() => {
     axios
-      .get("https://peaceful-castle-01942.herokuapp.com/allTours")
+      .get("https://evil-cemetery-21742.herokuapp.com/allTours")
 
       .then((res) => setAllTours(res.data));
   }, []);
@@ -33,13 +33,13 @@ const Home = () => {
         <Banner />
         <div className="container my-5">
           <h2 className="my-3 text-center">
-            Our <span className="text-warning fw-bold"> Travel package</span>
+            Our <span className="text-info fw-bold">Exclusive Plans</span>
           </h2>
           <div className="row row-cols-1 row-cols-md-3 g-4 ">
             {allTours.map((tour) => {
               return (
                 <div className="col " key={tour._id}>
-                  <div className="card h-100">
+                  <div className="card h-100 shadow bg-body rounded">
                     <img
                       src={tour.img_url}
                       className="card-img-top h-50"
@@ -50,7 +50,9 @@ const Home = () => {
                       <h5 className="card-title my-4">Rs. {tour.price}</h5>
                       <p className="card-text">{tour.desc.substr(0, 220)}</p>
                       <Link to={`/tourBook/${tour._id}`}>
-                        <button className="w-100 btn btn-dark">Book now</button>
+                        <button className="w-100 btn btn-info rounded-pill">
+                          Book now
+                        </button>
                       </Link>
                     </div>
                   </div>
@@ -59,8 +61,9 @@ const Home = () => {
             })}
           </div>
         </div>
-        <About />
+
         <Subscribe />
+        <Something></Something>
       </div>
     );
   }

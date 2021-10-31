@@ -9,8 +9,8 @@ const NavBar = () => {
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
-            <span className="ms-2  text-warning custom-style p-2 ">
-              Fahim's Tourism guide
+            <span className="ms-2  text-primary custom-style p-2 ">
+              Legend Tour & Travels
             </span>
           </Link>
           <button

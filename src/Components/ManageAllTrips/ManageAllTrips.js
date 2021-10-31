@@ -7,7 +7,7 @@ const ManageAllTrips = () => {
   document.title = "Manage All Trips";
   useEffect(() => {
     axios
-      .get("https://peaceful-castle-01942.herokuapp.com/manageAllUsers")
+      .get("https://evil-cemetery-21742.herokuapp.com/manageAllUsers")
       .then((res) => setManageAllUsers(res.data));
   }, [status]);
 
@@ -16,7 +16,7 @@ const ManageAllTrips = () => {
     if (proceed) {
       axios
         .delete(
-          `https://peaceful-castle-01942.herokuapp.com/deleteUsersTrip/${id}`
+          `https://evil-cemetery-21742.herokuapp.com/deleteUsersTrip/${id}`
         )
         .then((res) => {
           if (res.data.deletedCount > 0) {
@@ -29,7 +29,7 @@ const ManageAllTrips = () => {
 
   const handleEditStatus = (id) => {
     axios
-      .put(`https://peaceful-castle-01942.herokuapp.com/updateStatus/${id}`)
+      .put(`https://evil-cemetery-21742.herokuapp.com/updateStatus/${id}`)
       .then((res) => {
         if (res.data.modifiedCount > 0) {
           alert("Status Updated to Approved");
