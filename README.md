@@ -1,4 +1,4 @@
-# Project name : 
+# Project name : <strong>Legend Tour & Travels</strong>
 
 ## The link of the project : (https://legend-tour-and-travels.web.app/).
 
